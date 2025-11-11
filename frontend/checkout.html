@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💳 Checkout</h1>
+  </header>
+
+  <main>
+    <div class="checkout-container">
+      <!-- Order Summary Section -->
+      <div class="checkout-summary">
+        <h2>Your Order</h2>
+        <div id="checkout-items"></div>
+        <p id="checkout-total">Total: ₹0</p>
+      </div>
+
+      <!-- Customer Info Form -->
+      <form id="checkout-form" class="checkout-form">
+        <h2>Shipping Information</h2>
+
+        <label>Full Name</label>
+        <input type="text" id="name" required placeholder="Enter your full name">
+
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+
+        <label>Address</label>
+        <textarea id="address" required placeholder="Enter your shipping address"></textarea>
+
+        <label>Payment Method</label>
+        <select id="payment">
+          <option value="cod">Cash on Delivery</option>
+          <option value="upi">UPI</option>
+          <option value="card">Credit / Debit Card</option>
+        </select>
+
+        <button type="submit" id="place-order">Place Order</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 E-Commerce Store | Built for DBMS Project</p>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
