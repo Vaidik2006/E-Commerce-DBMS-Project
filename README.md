@@ -18,3 +18,7 @@ A full-stack e-commerce web app built using **Node.js**, **Express**, and **Mong
 1. Clone this repo  
    ```bash
    git clone https://github.com/yourusername/E-Commerce-DBMS-Project.git
+
+## Run
+npm start
+
